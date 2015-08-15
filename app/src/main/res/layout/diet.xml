@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RestrictionsActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dietarycriteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/selectmeal"
+        android:textSize="25sp"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/vegetarianbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10px"
+                android:text="@string/vegetarian"
+                android:textColor="@color/white"
+                android:background="@drawable/VegetarianFood"/>
+
+            <Button
+                android:id="@+id/glutenbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_alignTop="@+id/vegetarianbutton"
+                android:layout_toEndOf="@+id/vegetarianbutton"
+                android:layout_toRightOf="@+id/vegetarianbutton"
+                android:text="@string/gluten"
+                android:textColor="@color/white"
+                android:background="@drawable/GlutenFree"/>
+
+            <Button
+                android:id="@+id/glucosebutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/vegetarianbutton"
+                android:text="@string/glucose"
+                android:textColor="@color/white"
+                android:background="@drawable/glucosecontrol"/>
+
+            <Button
+                android:id="@+id/veganbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/vegetarianbutton"
+                android:layout_toRightOf="@id/glucosebutton"
+                android:text="@string/vegan"
+                android:textColor="@color/white"
+                android:background="@drawable/VeganFood"/>
+
+            <Button
+                android:id="@+id/sodiumbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/glucosebutton"
+                android:text="@string/sodium"
+                android:textColor="@color/white"
+                android:background="@drawable/LowSodium"/>
+
+            <Button
+                android:id="@+id/carbbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_alignLeft="@+id/veganbutton"
+                android:layout_below="@+id/veganbutton"
+                android:text="@string/carb"
+                android:textColor="@color/white"
+                android:background="@drawable/LowCarb"/>
+
+            <Button
+                android:id="@+id/fatbutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/sodiumbutton"
+                android:text="@string/fat"
+                android:textColor="@color/white"
+                android:background="@drawable/LowFat"/>
+
+            <Button
+                android:id="@+id/lactosebutton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/sodiumbutton"
+                android:layout_toRightOf="@id/fatbutton"
+                android:text="@string/lactose"
+                android:textColor="@color/white"
+                android:background="@drawable/LactoseFree"/>
+            <Button
+                android:id="@+id/done"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/lactosebutton"
+                android:text="@string/done"
+                android:background="@color/white"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

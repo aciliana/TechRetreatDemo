@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">techretreatdemo</string>
+    <string name="selectmeal">Select Your Dietary Criteria</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="gluten">Gluten Free</string>
+    <string name="glucose">Glucose Control</string>
+    <string name="vegan">Vegan</string>
+    <string name="sodium">Low Sodium</string>
+    <string name="carb">Low Carb</string>
+    <string name="fat">Low Fat</string>
+    <string name="lactose">Lactose Free</string>
+    <string name="done">Done</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="rest1">Fresh</string>
+    <string name="rest2">The Red Avocado</string>
+    <string name="rest3">Breaking Bread</string>
+    <string name="rest4">The Crystal Court</string>
+    <string name="rest5">Mystic Muffins</string>
+    <string name="rest6">Under The Table Restaurant</string>
+    <string name="rest7">Elephant and Castle</string>
+    <string name="rest8">Spoon and Fork Plus</string>
+    <string name="rest9">Riddle Room</string>
+    <string name="rest10">3 Brewers</string>
+</resources>

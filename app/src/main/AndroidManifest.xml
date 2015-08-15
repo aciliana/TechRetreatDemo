@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alicia.techretreatdemo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ins1"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.INS1"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ins2"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.INS2"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ins3"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.INS3"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signupactivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.SIGNUPACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".mealactivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.MEALACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".dietactivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.alicia.techretreatdemo.DIETACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

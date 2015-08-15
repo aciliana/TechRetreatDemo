@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/white">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:text="Select your meal"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:id="@+id/bre"
+            android:text="breakfast"
+            android:textColor="@color/white"
+            android:background="@drawable/breakfast"/>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:text="Lunch"
+            android:id="@+id/lun"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/bre"
+            android:layout_toEndOf="@+id/bre"
+            android:layout_toRightOf="@+id/bre"
+            android:textColor="@color/white"
+            android:background="@drawable/lunch"/>
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:text="Dinner"
+            android:id="@+id/din"
+            android:layout_below="@+id/bre"
+            android:textColor="@color/white"
+            android:background="@drawable/dinner"/>
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:text="Desert"
+            android:id="@+id/des"
+            android:layout_alignTop="@+id/din"
+            android:layout_toRightOf="@+id/din"
+            android:layout_toEndOf="@+id/din"
+            android:textColor="@color/white"
+            android:background="@drawable/dessert"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
